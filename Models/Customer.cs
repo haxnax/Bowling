@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Bowling.Data
+namespace Bowling.Models
 {
     public class Customer
     {
@@ -10,5 +10,6 @@ namespace Bowling.Data
         public string name { get; set; }
         public int BookingCount { get; set; }
         public ICollection<Booking> Bookings { get; set; }
+        public bool IsMember { get; set; }
     }
 }

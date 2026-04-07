@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
-namespace Bowling.Data
+namespace Bowling.Models
 {
     public class Booking
     {
@@ -10,12 +10,11 @@ namespace Bowling.Data
         public DateTime BookingDate { get; set; }
         public int HoursToPlay { get; set; } = 1;
         public Customer Customers { get; set; }
-
         public decimal PricePerHour
         {
             get
             {
-                if (Customers.BookingCount % 5 ==0)
+                if (Customers.BookingCount % 5 ==0 && Customers.IsMember == true)
                 {
                     return (90m * 0.8m);
                 }
@@ -23,12 +22,5 @@ namespace Bowling.Data
             }
             set;
         }
-
-
-
-}
-
-
-
     }
-
+}
