@@ -11,5 +11,8 @@ namespace Bowling.Models
         public bool IsAvailable { get; set; }
         public ICollection<Booking> Bookings { get; set; }
         public int BowlingHallId { get; set; }
+
+        public int GameId { get; set; }
+        public ICollection<Game> games { get; set; }
     }
 }

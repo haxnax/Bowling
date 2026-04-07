@@ -9,6 +9,7 @@ namespace Bowling.Models
         public int Id { get; set; }
         public DateTime BookingDate { get; set; }
         public int HoursToPlay { get; set; } = 1;
+        public int CustomerId { get; set; }
         public Customer Customers { get; set; }
         public decimal PricePerHour
         {

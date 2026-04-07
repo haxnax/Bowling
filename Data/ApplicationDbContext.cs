@@ -12,6 +12,8 @@ namespace Bowling.Data
         public DbSet<BowlingHall> BowlingHalls { get; set; }
         public DbSet<BowlingLane> BowlingLanes { get; set; }
         public DbSet<Customer> Customers { get; set; }
+        public DbSet<Player> Players { get; set; }
+        public DbSet<Game> Games { get; set; }
 
         public ApplicationDbContext()
         {

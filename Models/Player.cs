@@ -8,6 +8,16 @@ namespace Bowling.Models
     {
         public int PlayerId { get; set; }
         public string PlayerName { get; set; }
-        public int Score { get; set; }
+        public int RoundId { get; set; }
+        public Game Game { get; set; }
+
+        public int TotalScore { get
+            {
+
+               return TotalScore += Game.Score;
+                
+            } set; }
+
+       
     }
 }
