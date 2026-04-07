@@ -9,12 +9,12 @@ namespace Bowling.Data
     {
 
 
-        public DbSet<deleteme> deleteme { get; set; }
+        public DbSet<Booking> deleteme { get; set; }
 
 
         public ApplicationDbContext()
         {
-            // en tom konstruktor behövs för att skapa migrations
+
         }
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)

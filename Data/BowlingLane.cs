@@ -4,7 +4,8 @@ using System.Text;
 
 namespace Bowling.Data
 {
-    internal class BowlingHalls
+    internal class BowlingLane
     {
+
     }
 }
