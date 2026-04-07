@@ -14,7 +14,7 @@ namespace Bowling.Data
 
         public ApplicationDbContext()
         {
-
+            // en tom konstruktor behövs för att skapa migrations
         }
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
